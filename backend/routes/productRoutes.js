@@ -1,8 +1,7 @@
- import express from "express";
-import formidable from "express-formidable";
+const  express = "express";
+const formidable = "express-formidable";
 const router = express.Router();
 
-// controllers
 import {
   addProduct,
   updateProductDetails,

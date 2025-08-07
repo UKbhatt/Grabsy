@@ -28,7 +28,6 @@ router
   .get(authenticate, getCurrentUserProfile)
   .put(authenticate, updateCurrentUserProfile);
 
-// ADMIN ROUTES 👇
 router
   .route("/:id")
   .delete(authenticate, authorizeAdmin, deleteUserById)

@@ -1,7 +1,6 @@
 import Order from "../models/orderModel.js";
 import Product from "../models/productModel.js";
 
-// Utility Function
 function calcPrices(orderItems) {
   const itemsPrice = orderItems.reduce(
     (acc, item) => acc + item.price * item.qty,
